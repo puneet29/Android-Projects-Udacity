@@ -32,10 +32,16 @@ public class MainActivity extends AppCompatActivity {
      */
     int quantity=0;
     public void submitOrder(View view) {
-        int price= quantity*5;
-        String priceMessage="Total: $" + price;
-        priceMessage=priceMessage + "\nThank You!";
-        displayMessage(priceMessage);
+        int price= calculatePrice();
+        String summary= createOrderSummary(price);
+        displayMessage(summary);
+    }
+
+    /**
+     * Calculates the price of the order.
+     */
+    private int calculatePrice() {
+        return (quantity * 5);
     }
 
     /**
@@ -46,21 +52,14 @@ public class MainActivity extends AppCompatActivity {
         quantityTextView.setText("" + num);
     }
 
-    /**
-     * This method displays the given price on the screen.
-     */
-    private void displayPrice(int number) {
-        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
-    }
 
     public void increment(View view) {
-        quantity=quantity+1;
+        quantity++;
         displayQuantity(quantity);
     }
 
     public void decrement(View view) {
-        quantity=quantity-1;
+        quantity--;
         displayQuantity(quantity);
     }
 
@@ -68,7 +67,12 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given text on the screen.
      */
     private void displayMessage(String message) {
-        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText(message);
+        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
+        orderSummaryTextView.setText(message);
     }
+
+    private String createOrderSummary(int price){
+        return("Name: Kaptain Kunal\n" + "Quantity: " + quantity + "\nTotal: $" + price + "\nThank you!");
+    }
+
 }

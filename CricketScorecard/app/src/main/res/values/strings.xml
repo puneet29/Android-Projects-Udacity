@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Cricket Scorecard</string>
+    <string name="innings">First Inning</string>
+    <string name="left_team">Team A</string>
+    <string name="right_team">Team B</string>
+    <string name="left_status">(Batting)</string>
+    <string name="right_status">(Balling)</string>
+    <string name="left_score">0</string>
+    <string name="right_score">0</string>
+    <string name="runs">Runs</string>
+    <string name="wickets">Wickets</string>
+    <string name="one_run">+1</string>
+    <string name="two_run">+2</string>
+    <string name="three_run">+3</string>
+    <string name="four_run">Four</string>
+    <string name="six_run">Six</string>
+    <string name="one_wicket">+1</string>
+    <string name="reset">Reset Score</string>
+    <string name="second_inning">Second Inning</string>
+</resources>
