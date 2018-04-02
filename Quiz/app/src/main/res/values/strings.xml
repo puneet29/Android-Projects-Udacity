@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Quiz</string>
     <string name="question_1">Question 1:</string>
     <string name="question_2">Question 2:</string>
@@ -24,4 +24,5 @@
     <string name="q1_o2">Option 2</string>
     <string name="q1_o3">Option 3</string>
     <string name="q1_o4">Option 4</string>
+    <string name="results">Your result: <xliff:g id="name">%d</xliff:g>/10</string>
 </resources>

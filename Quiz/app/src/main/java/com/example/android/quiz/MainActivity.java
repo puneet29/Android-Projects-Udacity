@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,10 +19,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     RadioButton ans;
-    int ansid, count = 10, sum = 0;
+    int ansid, sum = 0;
+    int count[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
 
     public void onFirstClick1(View v) {
-        if (count == 10) {
+        if (count[0] == 1) {
             ans = findViewById(R.id.q1r1);
             ansid = ans.getId();
             RadioGroup rg = findViewById(R.id.q1rg1);
@@ -30,14 +32,15 @@ public class MainActivity extends AppCompatActivity {
                 sum += 1;
                 ans.setBackgroundResource(R.drawable.shape3);
             } else {
-                ans.setBackgroundResource(R.drawable.shape2);
-                count = 9;
+                v.setBackgroundResource(R.drawable.shape2);
+                ans.setBackgroundResource(R.drawable.shape3);
             }
         }
+        count[0] = 0;
     }
 
     public void onFirstClick2(View v) {
-        if (count == 9) {
+        if (count[1] == 1) {
             ans = findViewById(R.id.q2r1);
             ansid = ans.getId();
             RadioGroup rg = findViewById(R.id.q2rg2);
@@ -46,14 +49,15 @@ public class MainActivity extends AppCompatActivity {
                 sum += 1;
                 ans.setBackgroundResource(R.drawable.shape3);
             } else {
-                ans.setBackgroundResource(R.drawable.shape2);
-                count = 8;
+                v.setBackgroundResource(R.drawable.shape2);
+                ans.setBackgroundResource(R.drawable.shape3);
             }
         }
+        count[1] = 0;
     }
 
     public void onFirstClick3(View v) {
-        if (count == 8) {
+        if (count[2] == 1) {
             ans = findViewById(R.id.q3r1);
             ansid = ans.getId();
             RadioGroup rg = findViewById(R.id.q3rg3);
@@ -62,14 +66,15 @@ public class MainActivity extends AppCompatActivity {
                 sum += 1;
                 ans.setBackgroundResource(R.drawable.shape3);
             } else {
-                ans.setBackgroundResource(R.drawable.shape2);
-                count = 7;
+                v.setBackgroundResource(R.drawable.shape2);
+                ans.setBackgroundResource(R.drawable.shape3);
             }
         }
+        count[2] = 0;
     }
 
     public void onFirstClick4(View v) {
-        if (count == 7) {
+        if (count[3] == 1) {
             ans = findViewById(R.id.q4r1);
             ansid = ans.getId();
             RadioGroup rg = findViewById(R.id.q4rg4);
@@ -78,14 +83,15 @@ public class MainActivity extends AppCompatActivity {
                 sum += 1;
                 ans.setBackgroundResource(R.drawable.shape3);
             } else {
-                ans.setBackgroundResource(R.drawable.shape2);
-                count = 6;
+                v.setBackgroundResource(R.drawable.shape2);
+                ans.setBackgroundResource(R.drawable.shape3);
             }
         }
+        count[3] = 0;
     }
 
     public void onFirstClick5(View v) {
-        if (count == 6) {
+        if (count[4] == 1) {
             ans = findViewById(R.id.q5r1);
             ansid = ans.getId();
             RadioGroup rg = findViewById(R.id.q5rg5);
@@ -94,14 +100,15 @@ public class MainActivity extends AppCompatActivity {
                 sum += 1;
                 ans.setBackgroundResource(R.drawable.shape3);
             } else {
-                ans.setBackgroundResource(R.drawable.shape2);
-                count = 5;
+                v.setBackgroundResource(R.drawable.shape2);
+                ans.setBackgroundResource(R.drawable.shape3);
             }
         }
+        count[4] = 0;
     }
 
     public void onFirstClick6(View v) {
-        if (count == 5) {
+        if (count[5] == 1) {
             ans = findViewById(R.id.q6r1);
             ansid = ans.getId();
             RadioGroup rg = findViewById(R.id.q6rg6);
@@ -110,14 +117,15 @@ public class MainActivity extends AppCompatActivity {
                 sum += 1;
                 ans.setBackgroundResource(R.drawable.shape3);
             } else {
-                ans.setBackgroundResource(R.drawable.shape2);
-                count = 4;
+                v.setBackgroundResource(R.drawable.shape2);
+                ans.setBackgroundResource(R.drawable.shape3);
             }
         }
+        count[5] = 0;
     }
 
     public void onFirstClick7(View v) {
-        if (count == 4) {
+        if (count[6] == 1) {
             ans = findViewById(R.id.q7r1);
             ansid = ans.getId();
             RadioGroup rg = findViewById(R.id.q7rg7);
@@ -126,14 +134,15 @@ public class MainActivity extends AppCompatActivity {
                 sum += 1;
                 ans.setBackgroundResource(R.drawable.shape3);
             } else {
-                ans.setBackgroundResource(R.drawable.shape2);
-                count = 3;
+                v.setBackgroundResource(R.drawable.shape2);
+                ans.setBackgroundResource(R.drawable.shape3);
             }
         }
+        count[6] = 0;
     }
 
     public void onFirstClick8(View v) {
-        if (count == 3) {
+        if (count[7] == 1) {
             ans = findViewById(R.id.q8r1);
             ansid = ans.getId();
             RadioGroup rg = findViewById(R.id.q8rg8);
@@ -142,14 +151,15 @@ public class MainActivity extends AppCompatActivity {
                 sum += 1;
                 ans.setBackgroundResource(R.drawable.shape3);
             } else {
-                ans.setBackgroundResource(R.drawable.shape2);
-                count = 2;
+                v.setBackgroundResource(R.drawable.shape2);
+                ans.setBackgroundResource(R.drawable.shape3);
             }
         }
+        count[7] = 0;
     }
 
     public void onFirstClick9(View v) {
-        if (count == 2) {
+        if (count[8] == 1) {
             ans = findViewById(R.id.q9r1);
             ansid = ans.getId();
             RadioGroup rg = findViewById(R.id.q9rg9);
@@ -158,14 +168,15 @@ public class MainActivity extends AppCompatActivity {
                 sum += 1;
                 ans.setBackgroundResource(R.drawable.shape3);
             } else {
-                ans.setBackgroundResource(R.drawable.shape2);
-                count = 1;
+                v.setBackgroundResource(R.drawable.shape2);
+                ans.setBackgroundResource(R.drawable.shape3);
             }
         }
+        count[8] = 0;
     }
 
     public void onFirstClick10(View v) {
-        if (count == 1) {
+        if (count[9] == 1) {
             ans = findViewById(R.id.q10r1);
             ansid = ans.getId();
             RadioGroup rg = findViewById(R.id.q10rg10);
@@ -174,10 +185,16 @@ public class MainActivity extends AppCompatActivity {
                 sum += 1;
                 ans.setBackgroundResource(R.drawable.shape3);
             } else {
-                ans.setBackgroundResource(R.drawable.shape2);
-                count = 0;
+                v.setBackgroundResource(R.drawable.shape2);
+                ans.setBackgroundResource(R.drawable.shape3);
             }
         }
+        count[9] = 0;
+    }
+
+    public void results(View v) {
+        TextView textView = findViewById(R.id.result);
+        textView.setText(getString(R.string.results, sum));
     }
 
 }
