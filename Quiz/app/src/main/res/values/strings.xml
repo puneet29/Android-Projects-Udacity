@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="question_1">Question 1:</string>
+    <string name="question_2">Question 2:</string>
+    <string name="question_3">Question 3:</string>
+    <string name="question_4">Question 4:</string>
+    <string name="question_5">Question 5:</string>
+    <string name="question_6">Question 6:</string>
+    <string name="question_7">Question 7:</string>
+    <string name="question_8">Question 8:</string>
+    <string name="question_9">Question 9:</string>
+    <string name="question_10">Question 10:</string>
+    <string name="question_1_content">Sample Question 1</string>
+    <string name="question_2_content">Sample Question 2</string>
+    <string name="question_3_content">Sample Question 3</string>
+    <string name="question_4_content">Sample Question 4</string>
+    <string name="question_5_content">Sample Question 5</string>
+    <string name="question_6_content">Sample Question 6</string>
+    <string name="question_7_content">Sample Question 7</string>
+    <string name="question_8_content">Sample Question 8</string>
+    <string name="question_9_content">Sample Question 9</string>
+    <string name="question_10_content">Sample Question 10</string>
+    <string name="q1_o1">Option 1</string>
+    <string name="q1_o2">Option 2</string>
+    <string name="q1_o3">Option 3</string>
+    <string name="q1_o4">Option 4</string>
+</resources>
