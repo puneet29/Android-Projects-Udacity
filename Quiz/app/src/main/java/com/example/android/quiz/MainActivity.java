@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,11 +23,9 @@ public class MainActivity extends AppCompatActivity {
     int ansid, sum = 0;
     int count[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
 
-    public void onFirstClick1(View v) {
-        if (count[0] == 1) {
-            ans = findViewById(R.id.q1r1);
+    private void check(View ans, RadioGroup rg, View v, int num){
+        if (count[num] == 1) {
             ansid = ans.getId();
-            RadioGroup rg = findViewById(R.id.q1rg1);
 
             if (rg.getCheckedRadioButtonId() == ansid) {
                 sum += 1;
@@ -36,165 +35,71 @@ public class MainActivity extends AppCompatActivity {
                 ans.setBackgroundResource(R.drawable.shape3);
             }
         }
-        count[0] = 0;
+        count[num] = 0;
+    }
+
+    public void onFirstClick1(View v) {
+        ans = findViewById(R.id.q1r3);
+        RadioGroup rg = findViewById(R.id.q1rg1);
+        check(ans, rg, v, 0);
     }
 
     public void onFirstClick2(View v) {
-        if (count[1] == 1) {
-            ans = findViewById(R.id.q2r1);
-            ansid = ans.getId();
-            RadioGroup rg = findViewById(R.id.q2rg2);
-
-            if (rg.getCheckedRadioButtonId() == ansid) {
-                sum += 1;
-                ans.setBackgroundResource(R.drawable.shape3);
-            } else {
-                v.setBackgroundResource(R.drawable.shape2);
-                ans.setBackgroundResource(R.drawable.shape3);
-            }
-        }
-        count[1] = 0;
+        ans = findViewById(R.id.q2r1);
+        RadioGroup rg = findViewById(R.id.q2rg2);
+        check(ans, rg, v, 1);
     }
 
     public void onFirstClick3(View v) {
-        if (count[2] == 1) {
-            ans = findViewById(R.id.q3r1);
-            ansid = ans.getId();
-            RadioGroup rg = findViewById(R.id.q3rg3);
-
-            if (rg.getCheckedRadioButtonId() == ansid) {
-                sum += 1;
-                ans.setBackgroundResource(R.drawable.shape3);
-            } else {
-                v.setBackgroundResource(R.drawable.shape2);
-                ans.setBackgroundResource(R.drawable.shape3);
-            }
-        }
-        count[2] = 0;
+        ans = findViewById(R.id.q3r2);
+        RadioGroup rg = findViewById(R.id.q3rg3);
+        check(ans, rg, v, 2);
     }
 
     public void onFirstClick4(View v) {
-        if (count[3] == 1) {
-            ans = findViewById(R.id.q4r1);
-            ansid = ans.getId();
-            RadioGroup rg = findViewById(R.id.q4rg4);
-
-            if (rg.getCheckedRadioButtonId() == ansid) {
-                sum += 1;
-                ans.setBackgroundResource(R.drawable.shape3);
-            } else {
-                v.setBackgroundResource(R.drawable.shape2);
-                ans.setBackgroundResource(R.drawable.shape3);
-            }
-        }
-        count[3] = 0;
+        ans = findViewById(R.id.q4r1);
+        RadioGroup rg = findViewById(R.id.q4rg4);
+        check(ans, rg, v, 3);
     }
 
     public void onFirstClick5(View v) {
-        if (count[4] == 1) {
-            ans = findViewById(R.id.q5r1);
-            ansid = ans.getId();
-            RadioGroup rg = findViewById(R.id.q5rg5);
-
-            if (rg.getCheckedRadioButtonId() == ansid) {
-                sum += 1;
-                ans.setBackgroundResource(R.drawable.shape3);
-            } else {
-                v.setBackgroundResource(R.drawable.shape2);
-                ans.setBackgroundResource(R.drawable.shape3);
-            }
-        }
-        count[4] = 0;
+        ans = findViewById(R.id.q5r3);
+        RadioGroup rg = findViewById(R.id.q5rg5);
+        check(ans, rg, v, 4);
     }
 
     public void onFirstClick6(View v) {
-        if (count[5] == 1) {
-            ans = findViewById(R.id.q6r1);
-            ansid = ans.getId();
-            RadioGroup rg = findViewById(R.id.q6rg6);
-
-            if (rg.getCheckedRadioButtonId() == ansid) {
-                sum += 1;
-                ans.setBackgroundResource(R.drawable.shape3);
-            } else {
-                v.setBackgroundResource(R.drawable.shape2);
-                ans.setBackgroundResource(R.drawable.shape3);
-            }
-        }
-        count[5] = 0;
+        ans = findViewById(R.id.q6r3);
+        RadioGroup rg = findViewById(R.id.q6rg6);
+        check(ans, rg, v, 5);
     }
 
     public void onFirstClick7(View v) {
-        if (count[6] == 1) {
-            ans = findViewById(R.id.q7r1);
-            ansid = ans.getId();
-            RadioGroup rg = findViewById(R.id.q7rg7);
-
-            if (rg.getCheckedRadioButtonId() == ansid) {
-                sum += 1;
-                ans.setBackgroundResource(R.drawable.shape3);
-            } else {
-                v.setBackgroundResource(R.drawable.shape2);
-                ans.setBackgroundResource(R.drawable.shape3);
-            }
-        }
-        count[6] = 0;
+        ans = findViewById(R.id.q7r4);
+        RadioGroup rg = findViewById(R.id.q7rg7);
+        check(ans, rg, v, 6);
     }
 
     public void onFirstClick8(View v) {
-        if (count[7] == 1) {
-            ans = findViewById(R.id.q8r1);
-            ansid = ans.getId();
-            RadioGroup rg = findViewById(R.id.q8rg8);
-
-            if (rg.getCheckedRadioButtonId() == ansid) {
-                sum += 1;
-                ans.setBackgroundResource(R.drawable.shape3);
-            } else {
-                v.setBackgroundResource(R.drawable.shape2);
-                ans.setBackgroundResource(R.drawable.shape3);
-            }
-        }
-        count[7] = 0;
+        ans = findViewById(R.id.q8r2);
+        RadioGroup rg = findViewById(R.id.q8rg8);
+        check(ans, rg, v, 7);
     }
 
     public void onFirstClick9(View v) {
-        if (count[8] == 1) {
-            ans = findViewById(R.id.q9r1);
-            ansid = ans.getId();
-            RadioGroup rg = findViewById(R.id.q9rg9);
-
-            if (rg.getCheckedRadioButtonId() == ansid) {
-                sum += 1;
-                ans.setBackgroundResource(R.drawable.shape3);
-            } else {
-                v.setBackgroundResource(R.drawable.shape2);
-                ans.setBackgroundResource(R.drawable.shape3);
-            }
-        }
-        count[8] = 0;
+        ans = findViewById(R.id.q9r3);
+        RadioGroup rg = findViewById(R.id.q9rg9);
+        check(ans, rg, v, 8);
     }
 
     public void onFirstClick10(View v) {
-        if (count[9] == 1) {
-            ans = findViewById(R.id.q10r1);
-            ansid = ans.getId();
-            RadioGroup rg = findViewById(R.id.q10rg10);
-
-            if (rg.getCheckedRadioButtonId() == ansid) {
-                sum += 1;
-                ans.setBackgroundResource(R.drawable.shape3);
-            } else {
-                v.setBackgroundResource(R.drawable.shape2);
-                ans.setBackgroundResource(R.drawable.shape3);
-            }
-        }
-        count[9] = 0;
+        ans = findViewById(R.id.q10r1);
+        RadioGroup rg = findViewById(R.id.q10rg10);
+        check(ans, rg, v, 9);
     }
 
     public void results(View v) {
-        TextView textView = findViewById(R.id.result);
-        textView.setText(getString(R.string.results, sum));
+        Toast.makeText(this, getString(R.string.results, sum), Toast.LENGTH_LONG).show();
     }
 
 }
