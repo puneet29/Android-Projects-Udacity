@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
             if ((stat[i[0]] == activePlayer) && (stat[i[1]] == activePlayer) && (stat[i[2]] == activePlayer)) {
                 result.setText("Player " + activePlayer + " won!");
                 promptNeeded();
+                return;
             } else {
                 gameState = false;
                 for (int j : stat) {
